@@ -6,10 +6,10 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 ## Built with
 
 - HTML5
-- CSS3
+- CSS3 custom properties
 - [React](https://reactjs.org/) - JS library
 - npm - Vite
 
 ## Live URL
 
-- Check this project [online](#)
+- Check this project [online](https://alfo-code-calculator-react.netlify.app/)
