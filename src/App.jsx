@@ -44,7 +44,6 @@ function App() {
   const [calculatorData, setCalculatorData] = useState('')
 
   const handleSubmit = () => {
-    console.log({ calculatorData })
     const total = eval(calculatorData);
     setInput(total)
     setOutput(`${total}`)

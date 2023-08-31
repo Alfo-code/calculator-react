@@ -1,9 +1,21 @@
+:root {
+  --page-bk: rgb(239, 248, 255);
+  --calculator-bk: rgb(132, 130, 130);
+  --main-white: #fff;
+  --btn-clear: rgb(254, 92, 64);
+  --btn-equal: rgb(99, 164, 99);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+}
+
+body {
+  background-color: var(--page-bk);
 }
 
 .container {
@@ -17,7 +29,7 @@
   height: 445px;
   max-width: 460px;
   border-radius: 4px;
-  background-color: gray;
+  background-color: var(--calculator-bk);
 }
 
 .keypad {
@@ -28,17 +40,17 @@
 }
 
 .keypad button:first-child {
-  color: #ffffff;
+  color: var(--main-white);
   grid-column-end: 3;
   grid-column-start: 1;
-  background-color: tomato;
+  background-color: var(--btn-clear);
 }
 
 .keypad button:nth-child(15) {
-  color: #ffffff;
+  color: var(--main-white);
   grid-row: 4 / 6;
   grid-column: 4 / 4;
-  background-color: rgb(99, 164, 99);
+  background-color: var(--btn-equal);
 }
 
 .keypad button:nth-child(16) {
@@ -48,7 +60,7 @@
 
 .input,
 .output {
-  color: #fff;
+  color: var(--main-white);
   height: 40px;
   display: block;
   font-size: 30px;
